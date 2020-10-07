@@ -122,6 +122,12 @@ function createMenus() {
         contexts: ["all"]
     });
     browser.contextMenus.create({
+        id: "esperaAsercionTexto2s",
+        title: "esperaAsercionTexto2S",
+        documentUrlPatterns: ["<all_urls>"],
+        contexts: ["all"]
+    });
+    browser.contextMenus.create({
         id: "assertTitle",
         title: "assertTitle",
         documentUrlPatterns: ["<all_urls>"],

@@ -16,7 +16,15 @@
  */
 
 
-var commandTd=["addSelection","answerOnNextPrompt","assertAlert","assertConfirmation","assertPrompt","assertText","assertTitle","assertValue","chooseCancelOnNextConfirmation","chooseCancelOnNextPrompt","chooseOkOnNextConfirmation","clickAt","close" ,"dragAndDropToObject","doubleClickAt","echo","editContent","mouseDownAt","mouseMoveAt","mouseOut","mouseOver","mouseUpAt","open","pause","removeSelection","runScript","select","selectFrame","selectWindow","sendKeys","store","storeEval","storeText","storeTitle","storeValue","submit","type","verifyText","verifyTitle","verifyValue"];
+var commandTd=["addSelection", "answerOnNextPrompt", "assertAlert",
+  "assertConfirmation", "assertPrompt", "assertText", "assertTitle",
+  "assertValue", "chooseCancelOnNextConfirmation", "chooseCancelOnNextPrompt",
+  "chooseOkOnNextConfirmation", "clickAt", "close" ,"dragAndDropToObject",
+  "doubleClickAt", "echo", "editContent", "esperaAsercionTexto2s",
+  "mouseDownAt", "mouseMoveAt", "mouseOut", "mouseOver", "mouseUpAt", "open",
+  "pause", "removeSelection", "runScript", "select", "selectFrame",
+  "selectWindow", "sendKeys", "store", "storeEval", "storeText", "storeTitle",
+  "storeValue", "submit", "type", "verifyText", "verifyTitle", "verifyValue"];
 
 
 var targetTd=["A locator of a multi-select box","The string to be set to the next prompt pop-up","The expected alert message","The expected confirmation message",

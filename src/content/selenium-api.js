@@ -414,6 +414,24 @@ Selenium.prototype.doAssertText = function(locator, value) {
         throw new Error("Actual value '" + getText(element) + "' did not match '" + value + "'");
     }
 };
+
+Selenium.prototype.doEsperaAsercionTexto2s = function(locator, value) {
+    var element = this.browserbot.findElement(locator);
+    const fechai = Date.now();
+    let actual = null;
+    do {
+        actual = Date.now();
+    } while (actual - fechai < 2000 && 
+      getText(element).replace(/[\r\n\t]/gm,' ').replace(/  */gm, ' ').trim() !== 
+      value.replace(/[\r\n\t]/gm, ' ').replace(/  */gm, ' ').trim());
+    if (getText(element).replace(/[\r\n\t]/gm,' ').replace(/  */gm, ' ').trim() !== 
+      value.replace(/[\r\n\t]/gm, ' ').replace(/  */gm, ' ').trim()) {
+        throw new Error("Actual value '" + getText(element) + 
+          " did not match '" + value + "'");
+    }
+}
+
+
 // © Ming-Hung Hsu, SideeX Team
 Selenium.prototype.doAssertTitle = function(value) {
     if (normalizeSpaces(this.getTitle()) !== value) {

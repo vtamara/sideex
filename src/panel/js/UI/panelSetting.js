@@ -204,6 +204,7 @@ function genCommandDatalist() {
         "dragAndDropToObject",
         "echo",
         "editContent",
+        "esperaAsercionTexto2s",
         "mouseDownAt",
         "mouseMoveAt",
         "mouseOut",
